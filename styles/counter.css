@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; /* for consistent with and height when styling */
+}
+
+:root{
+    --purple: #2a316b;
+    --lavender: #c37eff;
+    --blue-grey: #202f4f;
+    --yellow: #ffc13a;
+}
+
+.pao{
+    display: flex;
+    align-items: center;
+}
+
+.pao p{
+    padding: 10px;
+    background-color: var(--blue-grey);
+    color: white;
+    border-radius: 10px;
+}
+
+.no_pao{
+    padding: 10px;
+    background-color: var(--blue-grey);
+    color: white;
+    border-radius: 10px;
+    max-width: 250px;
+    margin-left: 100px;
+}
+
+.paom p{
+    margin-left: 20px;
+}

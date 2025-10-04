@@ -1,0 +1,41 @@
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; /* for consistent with and height when styling */
+}
+
+.gallery {
+    max-width: 1200px;
+    margin: 4%;
+    column-count: 3;
+    font-family: arial;
+}
+.gallery-item {
+    break-inside: avoid;
+    margin-bottom: 5px;
+}
+.gallery-item figure {
+    margin: 0;
+    position: relative;
+}
+.gallery-item figcaption {
+    font-style: italic;
+    padding: 8px;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+    bottom: 3px;
+    color: #fff;
+    height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 0 0 14px 14px;
+}
+.gallery-item img {
+    width: 100%;
+    border-radius: 14px;
+}
+
+

@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; /* for consistent with and height when styling */
+}
+
+:root{
+    --purple: #2a316b;
+    --lavender: #c37eff;
+    --blue-grey: #202f4f;
+    --yellow: #ffc13a;
+}
+
+/* HERO SECTION */
+.hero_section{
+    height: 60vh;
+    background-color: var(--blue-grey);
+    color: white;
+}
+
+.hero_section .desc{
+    max-width: 80vw;
+    margin-block: 10%;
+}
+
+#letter{
+    color: var(--yellow);
+}
+
+.scrolldown{ /* Scroll icon */
+    transition: transform 0.3s ease;
+    animation: scroll_signal 1.5s ease-in-out infinite;
+}
+
+@keyframes scroll_signal { /* making the scroll down signal bouncing */
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* COUNTER */
+#counter{
+    font-size: 24px;
+}
+
+/* ABOUT ORGANIZER SECTION */
+
+/* Index.html responsive*/
+@media (max-width: 768px) {
+    .hero_section{
+        height: 50vh;
+    }
+}
+
+@media (max-width: 500px) {}
